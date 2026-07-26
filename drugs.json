@@ -1,0 +1,2066 @@
+{
+  "ACECLOFENAC": {
+    "uses": "A pain and anti-inflammatory medicine used for joint pain, back pain, and swelling after injury.",
+    "how": [
+      "Usually taken twice a day after food",
+      "Swallow whole with water, don't crush unless told to"
+    ],
+    "sideEffects": [
+      "Stomach upset",
+      "Heartburn",
+      "Nausea",
+      "Dizziness"
+    ],
+    "seeDoctor": [
+      "Black or bloody stools",
+      "Severe stomach pain",
+      "Swelling of face or throat",
+      "Difficulty breathing"
+    ],
+    "avoid": [
+      "Alcohol",
+      "Taking on an empty stomach",
+      "Long-term use without a doctor's advice",
+      "Use in pregnancy, especially the third trimester, without medical advice"
+    ],
+    "brands": [
+      "Hifenac",
+      "Zerodol",
+      "Aceclo",
+      "Dolokind",
+      "ACYTON"
+    ],
+    "forms": [
+      "Tablet (oral) — for joint/back pain and general inflammation",
+      "Topical gel — applied directly over the painful joint/muscle, e.g. Hifenac-P Gel"
+    ]
+  },
+  "ACETAZOLAMIDE": {
+    "uses": "Reduces fluid pressure inside the eye (glaucoma) and is also used to prevent altitude sickness.",
+    "how": [
+      "Taken as directed, often 1–4 times a day",
+      "Take with food to reduce stomach upset"
+    ],
+    "sideEffects": [
+      "Tingling in hands, feet, or lips",
+      "Increased urination",
+      "Taste changes",
+      "Fatigue"
+    ],
+    "seeDoctor": [
+      "Severe skin rash",
+      "Yellowing of skin or eyes",
+      "Confusion",
+      "Unusual bruising or bleeding"
+    ],
+    "avoid": [
+      "Alcohol",
+      "Driving if you feel drowsy or tingly"
+    ],
+    "brands": [
+      "Diamox",
+      "Acetamide",
+      "Avva",
+      "Zolamide",
+      "Iopar-SR"
+    ],
+    "forms": [
+      "Tablet (oral) — glaucoma, altitude sickness (most common household form)",
+      "Injection (IV) — hospital use only, for acute glaucoma or fluid overload"
+    ]
+  },
+  "ACETYLSALICYLIC ACID": {
+    "uses": "Also called Aspirin. Used in low doses to prevent heart attacks and strokes, and in higher doses for pain and fever.",
+    "how": [
+      "Low-dose tablets are usually taken once daily",
+      "Take with or after food to protect the stomach"
+    ],
+    "sideEffects": [
+      "Stomach irritation",
+      "Heartburn",
+      "Easy bruising"
+    ],
+    "seeDoctor": [
+      "Black stools or vomiting blood",
+      "Ringing in the ears",
+      "Signs of an allergic reaction"
+    ],
+    "avoid": [
+      "Giving to children under 16 (risk of Reye's syndrome)",
+      "Alcohol",
+      "Combining with other painkillers without advice"
+    ],
+    "brands": [
+      "Ecosprin",
+      "Disprin",
+      "Loprin",
+      "Colsprin",
+      "Delisprin"
+    ]
+  },
+  "ALBENDAZOLE": {
+    "uses": "An antiparasitic medicine used to treat worm infections in the intestine.",
+    "how": [
+      "Usually taken as a single dose or short course",
+      "Chew or crush the tablet and take with a meal"
+    ],
+    "sideEffects": [
+      "Mild stomach pain",
+      "Headache",
+      "Nausea"
+    ],
+    "seeDoctor": [
+      "Severe abdominal pain",
+      "Yellowing of skin or eyes",
+      "Unusual tiredness",
+      "Fever, sore throat, or unusual bruising/bleeding (rare blood-count effects, especially with repeated courses)"
+    ],
+    "avoid": [
+      "Use during pregnancy without medical advice"
+    ],
+    "brands": [
+      "Zentel",
+      "Noworm",
+      "Bandy",
+      "Albonox",
+      "Albenic"
+    ]
+  },
+  "ALLOPURINOL": {
+    "uses": "Lowers uric acid levels in the blood to prevent gout attacks and kidney stones.",
+    "how": [
+      "Taken once daily after food",
+      "Drink plenty of water while on this medicine"
+    ],
+    "sideEffects": [
+      "Mild rash",
+      "Nausea",
+      "Drowsiness"
+    ],
+    "seeDoctor": [
+      "Severe skin rash or blistering",
+      "Fever with rash",
+      "Yellowing of skin or eyes"
+    ],
+    "avoid": [
+      "Alcohol",
+      "Stopping suddenly during a gout flare without advice"
+    ],
+    "brands": [
+      "Zyloric",
+      "Lopurin",
+      "Alurick",
+      "Zyloprim",
+      "Aloprim"
+    ],
+    "forms": [
+      "Tablet (oral) — long-term gout prevention (most common household form)",
+      "Injection (IV) — hospital use only, e.g. during chemotherapy"
+    ]
+  },
+  "AMITRIPTYLINE": {
+    "uses": "Used in low doses for nerve pain and to help prevent migraines; in higher doses it treats depression.",
+    "how": [
+      "Usually taken once at night since it can cause drowsiness",
+      "Effects for pain may take 1–2 weeks to show"
+    ],
+    "sideEffects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Constipation",
+      "Weight gain"
+    ],
+    "seeDoctor": [
+      "Fast or irregular heartbeat",
+      "Severe confusion",
+      "Thoughts of self-harm",
+      "Difficulty urinating"
+    ],
+    "avoid": [
+      "Alcohol",
+      "Driving until you know how it affects you",
+      "Stopping suddenly without medical advice"
+    ],
+    "brands": [
+      "Tryptomer",
+      "Amitone",
+      "Elimel",
+      "Amitril",
+      "Sarotena"
+    ]
+  },
+  "AMLODIPINE": {
+    "uses": "A blood pressure medicine that relaxes blood vessels, also used for chest pain (angina).",
+    "how": [
+      "Taken once daily, with or without food",
+      "Take at the same time each day"
+    ],
+    "sideEffects": [
+      "Ankle swelling",
+      "Flushing",
+      "Headache",
+      "Fatigue"
+    ],
+    "seeDoctor": [
+      "Severe dizziness or fainting",
+      "Chest pain that worsens",
+      "Very slow or fast heartbeat"
+    ],
+    "avoid": [
+      "Stopping suddenly without advice",
+      "Grapefruit juice in large amounts"
+    ],
+    "brands": [
+      "Amlong",
+      "Amlopres",
+      "Amlokind",
+      "Amlopin",
+      "Amlodac"
+    ]
+  },
+  "AMOXICILLIN": {
+    "uses": "An antibiotic used to treat bacterial infections of the ear, throat, chest, urine and skin.",
+    "how": [
+      "Usually taken 2–3 times a day, spaced evenly",
+      "Can be taken with or without food"
+    ],
+    "sideEffects": [
+      "Nausea",
+      "Diarrhoea",
+      "Mild rash"
+    ],
+    "seeDoctor": [
+      "Severe rash or hives",
+      "Difficulty breathing or swallowing",
+      "Severe watery diarrhoea"
+    ],
+    "avoid": [
+      "Stopping early even if you feel better"
+    ],
+    "brands": [
+      "Novamox",
+      "Mox",
+      "Wymox",
+      "Moxikem",
+      "Almox"
+    ],
+    "forms": [
+      "Capsule/Tablet/Syrup (oral) — most common household form",
+      "Injection (IV) — hospital use only, for more serious infections"
+    ]
+  },
+  "AMOXICILLIN + CLAVULANIC ACID": {
+    "uses": "A stronger antibiotic combination used for infections that plain amoxicillin can't fully treat.",
+    "how": [
+      "Usually taken 2–3 times a day with food to reduce stomach upset",
+      "Complete the full course"
+    ],
+    "sideEffects": [
+      "Diarrhoea",
+      "Nausea",
+      "Mild rash"
+    ],
+    "seeDoctor": [
+      "Yellowing of skin or eyes",
+      "Severe or bloody diarrhoea",
+      "Signs of allergic reaction"
+    ],
+    "avoid": [
+      "Stopping the course early",
+      "Alcohol"
+    ],
+    "brands": [
+      "Augmentin",
+      "Clavam",
+      "Moxikind-CV",
+      "Novaclox",
+      "Fightox"
+    ],
+    "forms": [
+      "Tablet/Syrup (oral) — most common household form",
+      "Injection (IV) — hospital use only"
+    ]
+  },
+  "ATORVASTATIN": {
+    "uses": "A cholesterol-lowering medicine that reduces the risk of heart attack and stroke.",
+    "how": [
+      "Usually taken once daily, often at night",
+      "Can be taken with or without food"
+    ],
+    "sideEffects": [
+      "Mild muscle aches",
+      "Headache",
+      "Digestive upset"
+    ],
+    "seeDoctor": [
+      "Unexplained muscle pain, tenderness or weakness",
+      "Dark urine",
+      "Yellowing of skin or eyes"
+    ],
+    "avoid": [
+      "Grapefruit juice in large amounts",
+      "Alcohol excess",
+      "Stopping suddenly without advice"
+    ],
+    "brands": [
+      "Storvas",
+      "Atorva",
+      "Lipicure",
+      "Tonact",
+      "Attor"
+    ]
+  },
+  "AZITHROMYCIN": {
+    "uses": "An antibiotic used for respiratory, skin, and some sexually transmitted infections.",
+    "how": [
+      "Usually taken once daily for 3–5 days",
+      "Take on an empty stomach unless told otherwise"
+    ],
+    "sideEffects": [
+      "Nausea",
+      "Diarrhoea",
+      "Stomach pain"
+    ],
+    "seeDoctor": [
+      "Irregular heartbeat",
+      "Severe skin rash",
+      "Yellowing of skin or eyes"
+    ],
+    "avoid": [
+      "Stopping the course early",
+      "Antacids within 2 hours of dosing"
+    ],
+    "brands": [
+      "Azithral",
+      "Azee",
+      "Azicip",
+      "Aziwok",
+      "Azimax"
+    ]
+  },
+  "BACLOFEN": {
+    "uses": "A muscle relaxant used for muscle spasms and stiffness, often from spinal or nerve conditions.",
+    "how": [
+      "Usually started at a low dose and increased gradually",
+      "Take with food if it upsets your stomach"
+    ],
+    "sideEffects": [
+      "Drowsiness",
+      "Weakness",
+      "Dizziness",
+      "Nausea"
+    ],
+    "seeDoctor": [
+      "Severe confusion",
+      "Difficulty breathing",
+      "Hallucinations"
+    ],
+    "avoid": [
+      "Alcohol",
+      "Driving until you know how it affects you",
+      "Stopping suddenly (can cause withdrawal)"
+    ],
+    "brands": [
+      "Liofen",
+      "Lioresal",
+      "Baclosign",
+      "Bacloheal"
+    ]
+  },
+  "CARBAMAZEPINE": {
+    "uses": "Used to control seizures (epilepsy) and certain types of nerve pain, including trigeminal neuralgia.",
+    "how": [
+      "Usually taken 2–3 times a day with food",
+      "Dose is often increased slowly by your doctor"
+    ],
+    "sideEffects": [
+      "Drowsiness",
+      "Dizziness",
+      "Nausea",
+      "Blurred vision"
+    ],
+    "seeDoctor": [
+      "Severe skin rash or blistering",
+      "Yellowing of skin or eyes",
+      "Unusual bruising or bleeding",
+      "Fever with sore throat"
+    ],
+    "avoid": [
+      "Alcohol",
+      "Stopping suddenly without medical advice",
+      "Grapefruit juice"
+    ],
+    "brands": [
+      "Tegretol",
+      "Mazetol",
+      "Tegrital",
+      "Zeptol",
+      "Carmaz"
+    ]
+  },
+  "CEFIXIME": {
+    "uses": "An antibiotic used for infections of the throat, ear, urinary tract, and chest.",
+    "how": [
+      "Usually taken once or twice daily",
+      "Can be taken with or without food"
+    ],
+    "sideEffects": [
+      "Diarrhoea",
+      "Nausea",
+      "Stomach discomfort"
+    ],
+    "seeDoctor": [
+      "Severe or bloody diarrhoea",
+      "Rash or hives",
+      "Difficulty breathing",
+      "Confusion, convulsions, or unusual movements (rare, more likely with reduced kidney function)",
+      "Unusual bruising or bleeding"
+    ],
+    "avoid": [
+      "Stopping the course early"
+    ],
+    "brands": [
+      "Taxim-O",
+      "Zifi",
+      "Cefi",
+      "Cefspan",
+      "Suprax"
+    ]
+  },
+  "CETIRIZINE": {
+    "uses": "An antihistamine used to relieve allergy symptoms like sneezing, runny nose, and itchy eyes.",
+    "how": [
+      "Usually taken once daily, with or without food",
+      "Can be taken at night if it makes you drowsy"
+    ],
+    "sideEffects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Headache"
+    ],
+    "seeDoctor": [
+      "Severe allergic reaction (swelling, difficulty breathing)",
+      "Irregular heartbeat"
+    ],
+    "avoid": [
+      "Alcohol",
+      "Driving if it makes you sleepy"
+    ],
+    "brands": [
+      "Alerid",
+      "Cetzine",
+      "Zyrtec",
+      "Okacet",
+      "Cetcip"
+    ]
+  },
+  "CHLOROQUINE": {
+    "uses": "Used to prevent and treat malaria, and sometimes for certain autoimmune conditions.",
+    "how": [
+      "Take exactly as prescribed for prevention or treatment",
+      "Take with food to reduce stomach upset"
+    ],
+    "sideEffects": [
+      "Nausea",
+      "Headache",
+      "Itching",
+      "Blurred vision"
+    ],
+    "seeDoctor": [
+      "Vision changes",
+      "Irregular heartbeat",
+      "Severe dizziness",
+      "Ringing in ears"
+    ],
+    "avoid": [
+      "Skipping doses during a malaria prevention course",
+      "Long-term use without eye check-ups"
+    ],
+    "brands": [
+      "Lariago",
+      "Nivaquine-P",
+      "Malaquin",
+      "Maliago",
+      "Larquin"
+    ],
+    "forms": [
+      "Tablet/Syrup (oral) — malaria prevention/treatment at home",
+      "Injection — hospital use only, for severe malaria"
+    ]
+  },
+  "CHOLECALCIFEROL": {
+    "uses": "Vitamin D3 — a fat-soluble vitamin the body needs to absorb calcium and keep bones, teeth, and muscles healthy. Used to treat or prevent vitamin D deficiency, and to support treatment of bone conditions like osteoporosis, rickets, and osteomalacia. Very commonly prescribed in India, since limited sun exposure, indoor lifestyles, and covered clothing mean deficiency is widespread even in a sunny country.",
+    "how": [
+      "Taken as directed — daily, weekly, or monthly depending on the dose",
+      "Take with a meal containing some fat for better absorption"
+    ],
+    "sideEffects": [
+      "Usually well tolerated",
+      "Mild nausea in some people"
+    ],
+    "seeDoctor": [
+      "Symptoms of too much vitamin D: nausea, vomiting, weakness, confusion (rare with correct dosing)"
+    ],
+    "avoid": [
+      "Taking much higher doses than prescribed"
+    ],
+    "brands": [
+      "Calcirol",
+      "Uprise-D3",
+      "D-Rise",
+      "Arachitol",
+      "Sunbless"
+    ],
+    "forms": [
+      "Sachet/granules and capsules (oral) — most common household form, often a single high dose (e.g. 60,000 IU)",
+      "Injection (IM) — e.g. Arachitol, usually hospital/clinic-administered for severe deficiency"
+    ]
+  },
+  "CIPROFLOXACIN": {
+    "uses": "A broad-spectrum antibiotic (fluoroquinolone) used for urinary tract, respiratory, and some gut and typhoid infections. Also formulated as eye or ear drops for bacterial eye/ear infections, and as an IV form for more serious infections treated in hospital. It works by blocking bacteria from copying their own DNA, so it has no effect on viral infections like a cold or flu.",
+    "how": [
+      "Usually taken twice daily",
+      "Drink plenty of water; avoid dairy near dosing time"
+    ],
+    "sideEffects": [
+      "Nausea",
+      "Diarrhoea",
+      "Dizziness"
+    ],
+    "seeDoctor": [
+      "Tendon pain or swelling",
+      "Severe diarrhoea",
+      "Numbness or tingling",
+      "Rash",
+      "Seizures or convulsions",
+      "Irregular heartbeat",
+      "Unusual mood or mental changes (confusion, agitation, or severe anxiety)"
+    ],
+    "avoid": [
+      "Dairy products and antacids near dosing time",
+      "Excess sun exposure",
+      "Strenuous exercise if you notice tendon pain"
+    ],
+    "brands": [
+      "Ciplox",
+      "Cifran",
+      "Ciprobid",
+      "Ciprodac",
+      "Cipro"
+    ],
+    "forms": [
+      "Tablet/capsule/syrup (oral) — for systemic infections, most common household form",
+      "Eye/ear drops — for bacterial conjunctivitis or ear infections, e.g. Ciplox Eye/Ear Drops",
+      "Injection (IV) — hospital use only, for more serious infections"
+    ]
+  },
+  "CLARITHROMYCIN": {
+    "uses": "An antibiotic (macrolide) used for chest, throat, sinus, and skin infections. Also used as part of a combination treatment to clear H. pylori, the bacteria responsible for many stomach ulcers. Often prescribed as an alternative for people who are allergic to penicillin.",
+    "how": [
+      "Usually taken twice daily",
+      "Can be taken with or without food"
+    ],
+    "sideEffects": [
+      "Taste disturbance",
+      "Nausea",
+      "Stomach upset"
+    ],
+    "seeDoctor": [
+      "Irregular heartbeat",
+      "Severe diarrhoea",
+      "Yellowing of skin or eyes"
+    ],
+    "avoid": [
+      "Stopping the course early",
+      "Alcohol"
+    ],
+    "brands": [
+      "Claribid",
+      "Clarinova",
+      "Clarigard",
+      "Zoclar",
+      "Maclar"
+    ]
+  },
+  "CLINDAMYCIN": {
+    "uses": "An antibiotic used for skin, dental, bone, and certain deep tissue infections, especially ones that don't respond well to more commonly used antibiotics. Available as an oral capsule for infections inside the body and as a topical gel or lotion for acne. Often chosen for people allergic to penicillin, or for infections involving bacteria that don't need oxygen to grow (anaerobic bacteria).",
+    "how": [
+      "Usually taken 3–4 times a day with a full glass of water",
+      "Can be taken with food"
+    ],
+    "sideEffects": [
+      "Nausea",
+      "Diarrhoea",
+      "Metallic taste"
+    ],
+    "seeDoctor": [
+      "Severe or bloody diarrhoea (can happen even weeks after stopping)",
+      "Rash"
+    ],
+    "avoid": [
+      "Lying down immediately after taking it",
+      "Stopping the course early"
+    ],
+    "brands": [
+      "Dalacin",
+      "Clindac",
+      "Climycin",
+      "Clindac-A",
+      "Clinmax"
+    ],
+    "forms": [
+      "Capsule (oral) — for systemic infections",
+      "Topical gel/lotion — for acne, e.g. Clindac-A Gel",
+      "Injection (IV) — hospital use only, for serious infections"
+    ]
+  },
+  "CLONAZEPAM": {
+    "uses": "A benzodiazepine used to control certain seizure disorders (including absence seizures) and to manage panic disorder or severe anxiety. It works by calming overactive electrical activity in the brain. Usually prescribed for short-term use, or carefully monitored long-term use, because of the risk of dependence.",
+    "how": [
+      "Take exactly as prescribed, usually once or twice daily",
+      "Can be taken with or without food"
+    ],
+    "sideEffects": [
+      "Drowsiness",
+      "Dizziness",
+      "Poor coordination"
+    ],
+    "seeDoctor": [
+      "Severe confusion",
+      "Difficulty breathing",
+      "Thoughts of self-harm"
+    ],
+    "avoid": [
+      "Alcohol",
+      "Driving until you know how it affects you",
+      "Stopping suddenly without medical advice"
+    ],
+    "brands": [
+      "Clonotril",
+      "Lonazep",
+      "Rivotril",
+      "Epitril"
+    ]
+  },
+  "CLOPIDOGREL": {
+    "uses": "A blood-thinning (antiplatelet) medicine that stops platelets from sticking together and forming clots. Used to prevent heart attacks and strokes, especially in people with a history of one, and is critical after a coronary stent to stop the stent from clotting shut. Often prescribed alongside low-dose aspirin for a set period after a stent procedure or heart attack.",
+    "how": [
+      "Usually taken once daily",
+      "Take at the same time each day"
+    ],
+    "sideEffects": [
+      "Easy bruising",
+      "Mild stomach upset"
+    ],
+    "seeDoctor": [
+      "Unusual bleeding or bruising",
+      "Black or bloody stools",
+      "Signs of a stroke"
+    ],
+    "avoid": [
+      "Stopping suddenly without medical advice (risk of clot)",
+      "Taking with other blood thinners unless told to"
+    ],
+    "brands": [
+      "Clopilet",
+      "Deplatt",
+      "Clopivas",
+      "Plavix",
+      "Clavix"
+    ]
+  },
+  "CLOTRIMAZOLE": {
+    "uses": "An antifungal used for fungal skin infections (like ringworm and athlete's foot) and vaginal thrush. It comes as a cream or powder for the skin, a vaginal pessary/tablet or cream for thrush, and an oral 'mouth paint' or lozenge for oral thrush — the right form and application method depends on which one you have, so check the packaging.",
+    "how": [
+      "Apply to the affected area as directed, usually 2–3 times daily",
+      "Wash and dry the area before applying"
+    ],
+    "sideEffects": [
+      "Mild burning or irritation at the site"
+    ],
+    "seeDoctor": [
+      "Severe irritation",
+      "No improvement after a week",
+      "Signs of an allergic reaction"
+    ],
+    "avoid": [
+      "Using in the eyes",
+      "Stopping treatment early even if symptoms improve"
+    ],
+    "brands": [
+      "Candid",
+      "Canesten",
+      "Candid-V",
+      "Canditrim",
+      "Clocip"
+    ],
+    "forms": [
+      "Cream/powder — for skin fungal infections",
+      "Vaginal pessary/tablet or cream — for vaginal thrush, e.g. Candid-V",
+      "Oral mouth paint/lozenge — for oral thrush"
+    ]
+  },
+  "DIAZEPAM": {
+    "uses": "A benzodiazepine used short-term for anxiety, muscle spasms, and to control seizures; also used to ease alcohol withdrawal symptoms and to calm patients before certain medical or dental procedures. It works by calming overactive nerve activity in the brain. In hospitals it's also given as an injection or rectal gel for emergency seizure control.",
+    "how": [
+      "Take exactly as prescribed",
+      "Can be taken with or without food"
+    ],
+    "sideEffects": [
+      "Drowsiness",
+      "Muscle weakness",
+      "Confusion"
+    ],
+    "seeDoctor": [
+      "Difficulty breathing",
+      "Severe drowsiness or unresponsiveness",
+      "Thoughts of self-harm"
+    ],
+    "avoid": [
+      "Alcohol",
+      "Driving until you know how it affects you",
+      "Long-term use without medical review"
+    ],
+    "brands": [
+      "Calmpose",
+      "Valium",
+      "Placidox",
+      "Anxol",
+      "Alzepam"
+    ],
+    "forms": [
+      "Tablet (oral) — most common household form",
+      "Injection/rectal gel — hospital or emergency use for active seizures"
+    ]
+  },
+  "DICLOFENAC": {
+    "uses": "A pain and anti-inflammatory medicine for joint pain, muscle pain, and swelling.",
+    "how": [
+      "Usually taken 2–3 times a day after food",
+      "Gel forms are applied directly to the painful area"
+    ],
+    "sideEffects": [
+      "Stomach upset",
+      "Heartburn",
+      "Headache"
+    ],
+    "seeDoctor": [
+      "Black or bloody stools",
+      "Severe stomach pain",
+      "Swelling of face or difficulty breathing"
+    ],
+    "avoid": [
+      "Alcohol",
+      "Empty-stomach dosing",
+      "Long-term use without medical advice"
+    ]
+  },
+  "DICYCLOMINE": {
+    "uses": "Used to relieve stomach cramps and spasms, including in irritable bowel syndrome.",
+    "how": [
+      "Usually taken before meals, 3–4 times daily",
+      "Follow your doctor's dosing instructions"
+    ],
+    "sideEffects": [
+      "Dry mouth",
+      "Blurred vision",
+      "Dizziness"
+    ],
+    "seeDoctor": [
+      "Difficulty urinating",
+      "Fast heartbeat",
+      "Severe confusion"
+    ],
+    "avoid": [
+      "Driving if it blurs your vision or makes you drowsy",
+      "Alcohol"
+    ]
+  },
+  "DIGOXIN": {
+    "uses": "A heart medicine used to treat certain irregular heart rhythms and heart failure.",
+    "how": [
+      "Taken once daily at the same time",
+      "Do not double a missed dose"
+    ],
+    "sideEffects": [
+      "Nausea",
+      "Loss of appetite",
+      "Visual disturbances (seeing yellow/green halos)"
+    ],
+    "seeDoctor": [
+      "Irregular or very slow heartbeat",
+      "Severe nausea or vomiting",
+      "Confusion"
+    ],
+    "avoid": [
+      "Taking extra doses even if you feel unwell",
+      "Skipping regular blood level checks"
+    ]
+  },
+  "DILTIAZEM": {
+    "uses": "A blood pressure and heart rhythm medicine, also used for chest pain (angina).",
+    "how": [
+      "Usually taken once or twice daily",
+      "Swallow extended-release tablets whole, don't crush"
+    ],
+    "sideEffects": [
+      "Headache",
+      "Ankle swelling",
+      "Dizziness"
+    ],
+    "seeDoctor": [
+      "Very slow heartbeat",
+      "Severe dizziness or fainting",
+      "Swelling with breathlessness"
+    ],
+    "avoid": [
+      "Stopping suddenly without medical advice",
+      "Grapefruit juice"
+    ]
+  },
+  "DOMPERIDONE": {
+    "uses": "Used to relieve nausea, vomiting, and bloating by helping the stomach empty faster.",
+    "how": [
+      "Usually taken 15–30 minutes before meals, up to 3 times a day",
+      "Use for the shortest time needed"
+    ],
+    "sideEffects": [
+      "Dry mouth",
+      "Headache",
+      "Mild stomach cramps"
+    ],
+    "seeDoctor": [
+      "Irregular heartbeat or palpitations",
+      "Fainting",
+      "Unusual breast changes"
+    ],
+    "avoid": [
+      "Use for longer than advised by your doctor",
+      "Combining with certain heart medicines without advice"
+    ]
+  },
+  "DONEPEZIL": {
+    "uses": "Used to help with memory and thinking symptoms in Alzheimer's disease.",
+    "how": [
+      "Usually taken once daily at bedtime",
+      "Can be taken with or without food"
+    ],
+    "sideEffects": [
+      "Nausea",
+      "Diarrhoea",
+      "Vivid dreams",
+      "Loss of appetite"
+    ],
+    "seeDoctor": [
+      "Very slow heartbeat or fainting",
+      "New or worsening confusion"
+    ],
+    "avoid": [
+      "Stopping suddenly without medical advice"
+    ]
+  },
+  "DOXYCYCLINE": {
+    "uses": "An antibiotic used for chest, skin, and some sexually transmitted infections, and for malaria prevention.",
+    "how": [
+      "Usually taken once or twice daily with a full glass of water",
+      "Take with food to reduce stomach upset"
+    ],
+    "sideEffects": [
+      "Nausea",
+      "Sun sensitivity",
+      "Stomach upset"
+    ],
+    "seeDoctor": [
+      "Severe skin burning after sun exposure",
+      "Difficulty swallowing",
+      "Severe diarrhoea"
+    ],
+    "avoid": [
+      "Lying down right after taking it",
+      "Direct sun exposure without protection",
+      "Dairy or antacids near dosing time"
+    ]
+  },
+  "ENALAPRIL": {
+    "uses": "A blood pressure medicine (ACE inhibitor) also used in heart failure.",
+    "how": [
+      "Usually taken once or twice daily",
+      "Can be taken with or without food"
+    ],
+    "sideEffects": [
+      "Dry cough",
+      "Dizziness",
+      "Headache"
+    ],
+    "seeDoctor": [
+      "Swelling of face, lips or throat",
+      "Severe dizziness or fainting",
+      "Difficulty breathing"
+    ],
+    "avoid": [
+      "Stopping suddenly without medical advice",
+      "Salt substitutes high in potassium without checking with your doctor"
+    ]
+  },
+  "ETODOLAC": {
+    "uses": "A pain and anti-inflammatory medicine used for arthritis, joint pain, and general pain relief.",
+    "how": [
+      "Usually taken once or twice daily with food",
+      "Swallow whole, don't crush extended-release tablets"
+    ],
+    "sideEffects": [
+      "Stomach upset",
+      "Heartburn",
+      "Headache",
+      "Dizziness"
+    ],
+    "seeDoctor": [
+      "Black or bloody stools",
+      "Severe stomach pain",
+      "Swelling of face or difficulty breathing"
+    ],
+    "avoid": [
+      "Alcohol",
+      "Empty-stomach dosing",
+      "Long-term use without medical advice"
+    ]
+  },
+  "KETOROLAC": {
+    "uses": "A strong short-term pain reliever, often used after surgery or for severe acute pain.",
+    "how": [
+      "Used only for short periods (usually up to 5 days)",
+      "Take with food to protect your stomach"
+    ],
+    "sideEffects": [
+      "Stomach upset",
+      "Drowsiness",
+      "Headache"
+    ],
+    "seeDoctor": [
+      "Black or bloody stools",
+      "Severe stomach pain",
+      "Reduced urination",
+      "Swelling of face or difficulty breathing"
+    ],
+    "avoid": [
+      "Using for longer than your doctor advises",
+      "Alcohol",
+      "Combining with other NSAIDs like ibuprofen or diclofenac"
+    ]
+  },
+  "METFORMIN": {
+    "uses": "A first-line medicine for type 2 diabetes that helps control blood sugar levels.",
+    "how": [
+      "Usually taken with meals to reduce stomach upset",
+      "It can take a few weeks to see the full effect on blood sugar"
+    ],
+    "sideEffects": [
+      "Nausea",
+      "Loose motions, especially when starting",
+      "Stomach discomfort",
+      "A metallic taste"
+    ],
+    "seeDoctor": [
+      "Unusual muscle pain along with weakness",
+      "Fast or difficult breathing",
+      "Persistent vomiting",
+      "Unusual tiredness or drowsiness"
+    ],
+    "avoid": [
+      "Alcohol",
+      "Skipping meals right after a dose",
+      "Stopping suddenly without medical advice"
+    ]
+  },
+  "OMEPRAZOLE": {
+    "uses": "Reduces stomach acid; used for acidity, reflux, and ulcers.",
+    "how": [
+      "Usually taken once daily before breakfast",
+      "Swallow the capsule whole, don't chew"
+    ],
+    "sideEffects": [
+      "Headache",
+      "Stomach pain",
+      "Nausea"
+    ],
+    "seeDoctor": [
+      "Severe or persistent diarrhoea",
+      "Unexplained weight loss",
+      "Difficulty swallowing"
+    ],
+    "avoid": [
+      "Long-term use without medical review"
+    ]
+  },
+  "PANTOPRAZOLE": {
+    "uses": "Reduces stomach acid; used for acidity, reflux, and ulcers.",
+    "how": [
+      "Usually taken once daily before a meal",
+      "Swallow the tablet whole, don't crush"
+    ],
+    "sideEffects": [
+      "Headache",
+      "Diarrhoea",
+      "Stomach pain"
+    ],
+    "seeDoctor": [
+      "Severe or persistent diarrhoea",
+      "Unexplained weight loss",
+      "Signs of an allergic reaction"
+    ],
+    "avoid": [
+      "Long-term use without medical review"
+    ]
+  },
+  "LOSARTAN": {
+    "uses": "A blood pressure medicine (ARB) also used to protect the kidneys in diabetes.",
+    "how": [
+      "Usually taken once daily",
+      "Can be taken with or without food"
+    ],
+    "sideEffects": [
+      "Dizziness",
+      "Fatigue",
+      "Mild cough"
+    ],
+    "seeDoctor": [
+      "Severe dizziness or fainting",
+      "Swelling of face or throat",
+      "Reduced urination"
+    ],
+    "avoid": [
+      "Stopping suddenly without medical advice",
+      "Salt substitutes high in potassium without checking with your doctor"
+    ]
+  },
+  "IBUPROFEN": {
+    "uses": "A common pain, fever, and anti-inflammatory medicine used for headaches, muscle pain, and fever.",
+    "how": [
+      "Usually taken every 6–8 hours with food",
+      "Do not exceed the maximum daily dose on the label"
+    ],
+    "sideEffects": [
+      "Stomach upset",
+      "Heartburn",
+      "Nausea"
+    ],
+    "seeDoctor": [
+      "Black or bloody stools",
+      "Severe stomach pain",
+      "Swelling of face or difficulty breathing"
+    ],
+    "avoid": [
+      "Alcohol",
+      "Empty-stomach dosing",
+      "Long-term daily use without medical advice"
+    ]
+  },
+  "AMBROXOL": {
+    "uses": "A cough medicine that helps loosen and clear mucus from the airways.",
+    "how": [
+      "Usually taken 2-3 times a day",
+      "Can be taken with or without food",
+      "Drink plenty of water alongside it"
+    ],
+    "sideEffects": [
+      "Mild nausea",
+      "Stomach upset",
+      "Dry mouth"
+    ],
+    "seeDoctor": [
+      "Severe skin rash or blistering",
+      "Difficulty breathing",
+      "Persistent cough beyond a week"
+    ],
+    "avoid": [
+      "Combining with other cough suppressants unless advised"
+    ]
+  },
+  "AMIODARONE": {
+    "uses": "Used to control serious irregular heart rhythms.",
+    "how": [
+      "Taken exactly as prescribed, often once daily",
+      "Take with food to reduce stomach upset"
+    ],
+    "sideEffects": [
+      "Nausea",
+      "Tremor",
+      "Sensitivity to sunlight"
+    ],
+    "seeDoctor": [
+      "New or worsening breathlessness",
+      "Yellowing of skin or eyes",
+      "Vision changes",
+      "Unexplained cough"
+    ],
+    "avoid": [
+      "Direct sun exposure without protection",
+      "Stopping suddenly without medical advice",
+      "Grapefruit juice"
+    ]
+  },
+  "BISOPROLOL": {
+    "uses": "A beta-blocker used for high blood pressure, chest pain, and certain heart rhythm problems.",
+    "how": [
+      "Taken once daily, usually in the morning",
+      "Can be taken with or without food"
+    ],
+    "sideEffects": [
+      "Fatigue",
+      "Cold hands or feet",
+      "Dizziness"
+    ],
+    "seeDoctor": [
+      "Very slow heartbeat",
+      "Severe breathlessness",
+      "Fainting"
+    ],
+    "avoid": [
+      "Stopping suddenly without medical advice",
+      "Alcohol in excess"
+    ]
+  },
+  "BUDESONIDE": {
+    "uses": "An inhaled steroid used to control asthma and prevent asthma attacks; also used as a nasal spray for allergies.",
+    "how": [
+      "Used regularly as directed, even when you feel well",
+      "Rinse your mouth with water after using the inhaler"
+    ],
+    "sideEffects": [
+      "Hoarse voice",
+      "Throat irritation",
+      "Oral thrush (with inhaler)"
+    ],
+    "seeDoctor": [
+      "Worsening breathlessness despite using it",
+      "White patches in the mouth",
+      "No improvement in symptoms"
+    ],
+    "avoid": [
+      "Stopping suddenly without medical advice",
+      "Skipping the mouth rinse after inhaler use"
+    ]
+  },
+  "CANDESARTAN": {
+    "uses": "A blood pressure medicine (ARB) also used in some cases of heart failure.",
+    "how": [
+      "Usually taken once daily",
+      "Can be taken with or without food"
+    ],
+    "sideEffects": [
+      "Dizziness",
+      "Headache",
+      "Back pain"
+    ],
+    "seeDoctor": [
+      "Swelling of face or throat",
+      "Severe dizziness or fainting",
+      "Reduced urination"
+    ],
+    "avoid": [
+      "Stopping suddenly without medical advice",
+      "Salt substitutes high in potassium without checking with your doctor"
+    ]
+  },
+  "CEFUROXIME": {
+    "uses": "An antibiotic used for respiratory, urinary, skin, and ENT infections.",
+    "how": [
+      "Usually taken twice daily with food",
+      "Complete the full course"
+    ],
+    "sideEffects": [
+      "Diarrhoea",
+      "Nausea",
+      "Stomach discomfort"
+    ],
+    "seeDoctor": [
+      "Severe or bloody diarrhoea",
+      "Rash or hives",
+      "Difficulty breathing",
+      "Unusual bruising or bleeding"
+    ],
+    "avoid": [
+      "Stopping the course early",
+      "Crushing tablets unless told to",
+      "Relying solely on hormonal birth control pills during treatment — antibiotics can occasionally reduce how well they work"
+    ]
+  },
+  "CHLORPHENIRAMINE": {
+    "uses": "An antihistamine used for allergy symptoms, hay fever, and itching.",
+    "how": [
+      "Usually taken every 4-6 hours as needed",
+      "Can cause drowsiness, so caution when driving"
+    ],
+    "sideEffects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Blurred vision"
+    ],
+    "seeDoctor": [
+      "Severe allergic reaction",
+      "Difficulty urinating",
+      "Rapid heartbeat"
+    ],
+    "avoid": [
+      "Alcohol",
+      "Driving or operating machinery if drowsy"
+    ]
+  },
+  "CILNIDIPINE": {
+    "uses": "A blood pressure medicine that relaxes blood vessels, commonly used for hypertension.",
+    "how": [
+      "Usually taken once daily",
+      "Can be taken with or without food"
+    ],
+    "sideEffects": [
+      "Headache",
+      "Dizziness",
+      "Ankle swelling"
+    ],
+    "seeDoctor": [
+      "Severe dizziness or fainting",
+      "Chest pain",
+      "Very slow or fast heartbeat"
+    ],
+    "avoid": [
+      "Stopping suddenly without medical advice",
+      "Grapefruit juice"
+    ]
+  },
+  "CLOBETASOL": {
+    "uses": "A strong steroid cream/ointment used for severe skin conditions like eczema and psoriasis.",
+    "how": [
+      "Apply a thin layer to the affected area as directed, usually once or twice daily",
+      "Use only on the area advised, for the shortest time needed"
+    ],
+    "sideEffects": [
+      "Thinning of skin with prolonged use",
+      "Mild burning or stinging"
+    ],
+    "seeDoctor": [
+      "Skin infection at the application site",
+      "No improvement after 2 weeks",
+      "Signs of an allergic reaction"
+    ],
+    "avoid": [
+      "Using on the face unless specifically told to",
+      "Using for longer than prescribed",
+      "Covering treated skin tightly unless advised"
+    ]
+  },
+  "CLOZAPINE": {
+    "uses": "Used for schizophrenia that hasn't responded to other treatments.",
+    "how": [
+      "Taken exactly as prescribed, dose adjusted gradually by your doctor",
+      "Regular blood tests are required throughout treatment"
+    ],
+    "sideEffects": [
+      "Drowsiness",
+      "Weight gain",
+      "Increased saliva production"
+    ],
+    "seeDoctor": [
+      "Fever, sore throat, or signs of infection (report immediately)",
+      "Fast heartbeat",
+      "Severe constipation"
+    ],
+    "avoid": [
+      "Skipping required blood tests",
+      "Alcohol",
+      "Stopping suddenly without medical advice"
+    ]
+  },
+  "DAPAGLIFLOZIN": {
+    "uses": "A diabetes medicine that helps the kidneys remove excess sugar through urine.",
+    "how": [
+      "Usually taken once daily in the morning",
+      "Can be taken with or without food"
+    ],
+    "sideEffects": [
+      "Increased urination",
+      "Genital itching or infection",
+      "Thirst"
+    ],
+    "seeDoctor": [
+      "Signs of a urinary or genital infection",
+      "Unusual tiredness with nausea (rare but serious)",
+      "Dehydration symptoms"
+    ],
+    "avoid": [
+      "Skipping fluids on hot days",
+      "Stopping suddenly without medical advice"
+    ]
+  },
+  "DESLORATADINE": {
+    "uses": "A non-drowsy antihistamine used for allergy symptoms like sneezing, itching, and runny nose.",
+    "how": [
+      "Taken once daily, with or without food"
+    ],
+    "sideEffects": [
+      "Headache",
+      "Dry mouth",
+      "Fatigue (uncommon)"
+    ],
+    "seeDoctor": [
+      "Severe allergic reaction",
+      "Irregular heartbeat"
+    ],
+    "avoid": [
+      "Exceeding the recommended dose"
+    ]
+  },
+  "DEXAMETHASONE": {
+    "uses": "A steroid used to reduce inflammation and swelling in many conditions.",
+    "how": [
+      "Take exactly as prescribed, usually with food",
+      "Do not stop suddenly if used for more than a few days"
+    ],
+    "sideEffects": [
+      "Increased appetite",
+      "Mood changes",
+      "Trouble sleeping"
+    ],
+    "seeDoctor": [
+      "Severe stomach pain",
+      "Signs of infection",
+      "Vision changes",
+      "Severe mood or behaviour changes"
+    ],
+    "avoid": [
+      "Stopping suddenly without medical advice",
+      "Live vaccines without checking with your doctor"
+    ]
+  },
+  "DULOXETINE": {
+    "uses": "Used for depression, anxiety, and certain types of nerve pain.",
+    "how": [
+      "Usually taken once daily",
+      "Swallow the capsule whole, don't crush or open it"
+    ],
+    "sideEffects": [
+      "Nausea",
+      "Dry mouth",
+      "Fatigue",
+      "Sweating"
+    ],
+    "seeDoctor": [
+      "Thoughts of self-harm",
+      "Yellowing of skin or eyes",
+      "Severe mood changes"
+    ],
+    "avoid": [
+      "Alcohol",
+      "Stopping suddenly without medical advice"
+    ]
+  },
+  "ESCITALOPRAM": {
+    "uses": "Used to treat depression and anxiety disorders.",
+    "how": [
+      "Usually taken once daily, with or without food",
+      "Effects may take 2-4 weeks to become noticeable"
+    ],
+    "sideEffects": [
+      "Nausea",
+      "Dry mouth",
+      "Sleep changes",
+      "Reduced sex drive"
+    ],
+    "seeDoctor": [
+      "Thoughts of self-harm",
+      "Severe agitation or confusion",
+      "Unusual bleeding"
+    ],
+    "avoid": [
+      "Alcohol",
+      "Stopping suddenly without medical advice"
+    ]
+  },
+  "FEBUXOSTAT": {
+    "uses": "Lowers uric acid levels to prevent gout attacks, used when allopurinol isn't suitable.",
+    "how": [
+      "Taken once daily, with or without food",
+      "Drink plenty of water"
+    ],
+    "sideEffects": [
+      "Nausea",
+      "Joint pain",
+      "Mild rash"
+    ],
+    "seeDoctor": [
+      "Severe skin rash",
+      "Chest pain",
+      "Yellowing of skin or eyes"
+    ],
+    "avoid": [
+      "Stopping during a gout flare without medical advice"
+    ]
+  },
+  "FLUCONAZOLE": {
+    "uses": "An antifungal medicine used for yeast infections and fungal skin/nail infections.",
+    "how": [
+      "Often taken as a single dose or short course, with or without food"
+    ],
+    "sideEffects": [
+      "Headache",
+      "Nausea",
+      "Stomach discomfort"
+    ],
+    "seeDoctor": [
+      "Yellowing of skin or eyes",
+      "Severe skin rash",
+      "Signs of allergic reaction"
+    ],
+    "avoid": [
+      "Alcohol excess",
+      "Taking with certain other medicines without checking"
+    ]
+  },
+  "GLIMEPIRIDE": {
+    "uses": "Used to control blood sugar in type 2 diabetes by helping the pancreas release more insulin.",
+    "how": [
+      "Usually taken once daily with breakfast or the first main meal",
+      "Don't skip meals after taking it"
+    ],
+    "sideEffects": [
+      "Low blood sugar (shakiness, sweating, hunger)",
+      "Headache",
+      "Nausea"
+    ],
+    "seeDoctor": [
+      "Severe low blood sugar symptoms (confusion, fainting)",
+      "Skin rash",
+      "Yellowing of skin or eyes"
+    ],
+    "avoid": [
+      "Skipping meals after a dose",
+      "Alcohol",
+      "Missing regular blood sugar checks"
+    ]
+  },
+  "HYDROXYCHLOROQUINE": {
+    "uses": "Used for certain autoimmune conditions like rheumatoid arthritis and lupus, and for malaria.",
+    "how": [
+      "Taken with food or milk to reduce stomach upset",
+      "Effects for autoimmune conditions can take weeks to months"
+    ],
+    "sideEffects": [
+      "Nausea",
+      "Stomach upset",
+      "Headache"
+    ],
+    "seeDoctor": [
+      "Vision changes (regular eye check-ups are needed)",
+      "Muscle weakness",
+      "Irregular heartbeat"
+    ],
+    "avoid": [
+      "Skipping recommended eye examinations",
+      "Stopping suddenly without medical advice"
+    ]
+  },
+  "LEVOCETIRIZINE": {
+    "uses": "An antihistamine used for allergy symptoms such as sneezing, itching, and hives.",
+    "how": [
+      "Usually taken once daily, often at night",
+      "Can be taken with or without food"
+    ],
+    "sideEffects": [
+      "Drowsiness",
+      "Dry mouth",
+      "Fatigue"
+    ],
+    "seeDoctor": [
+      "Severe allergic reaction",
+      "Irregular heartbeat"
+    ],
+    "avoid": [
+      "Alcohol",
+      "Driving if it makes you drowsy"
+    ]
+  },
+  "MONTELUKAST": {
+    "uses": "Used to prevent asthma symptoms and to relieve allergic rhinitis (hay fever).",
+    "how": [
+      "Usually taken once daily in the evening",
+      "Can be taken with or without food"
+    ],
+    "sideEffects": [
+      "Headache",
+      "Stomach pain",
+      "Mild fatigue"
+    ],
+    "seeDoctor": [
+      "Mood or behaviour changes",
+      "Difficulty breathing that worsens",
+      "Signs of an allergic reaction"
+    ],
+    "avoid": [
+      "Using as a rescue inhaler substitute",
+      "Stopping suddenly without medical advice"
+    ]
+  },
+  "TELMISARTAN": {
+    "uses": "A blood pressure medicine (ARB) that relaxes blood vessels to lower blood pressure.",
+    "how": [
+      "Usually taken once daily",
+      "Can be taken with or without food"
+    ],
+    "sideEffects": [
+      "Dizziness",
+      "Back pain",
+      "Fatigue"
+    ],
+    "seeDoctor": [
+      "Swelling of face or throat",
+      "Severe dizziness or fainting",
+      "Reduced urination"
+    ],
+    "avoid": [
+      "Stopping suddenly without medical advice",
+      "Salt substitutes high in potassium without checking with your doctor"
+    ]
+  },
+  "RANITIDINE": {
+    "uses": "Reduces stomach acid; used for acidity, heartburn, and ulcers. Note: removed from India's NLEM in 2022 and under CDSCO monitoring for a possible cancer-linked impurity (NDMA), but it remains legally sold over the counter in India (e.g. as Aciloc, Rantac, Zinetac) as of the CDSCO's latest public statements.",
+    "how": [
+      "Usually taken before meals or at bedtime, as directed",
+      "Can be taken with or without food"
+    ],
+    "sideEffects": [
+      "Headache",
+      "Constipation or diarrhoea",
+      "Dizziness"
+    ],
+    "seeDoctor": [
+      "Black or bloody stools",
+      "Persistent stomach pain",
+      "Difficulty swallowing"
+    ],
+    "avoid": [
+      "Alcohol",
+      "Self-medicating for long periods without medical review"
+    ]
+  },
+  "PARACETAMOL": {
+    "uses": "A pain reliever and fever reducer used for headache, body ache, and fever.",
+    "how": [
+      "Can be taken with or without food",
+      "Leave a gap of at least 4-6 hours between doses"
+    ],
+    "sideEffects": [
+      "Nausea (uncommon at normal doses)",
+      "Rash (rare)"
+    ],
+    "seeDoctor": [
+      "Fever lasting more than 3 days",
+      "Yellowing of skin or eyes",
+      "Signs of allergic reaction"
+    ],
+    "avoid": [
+      "Exceeding the recommended daily dose",
+      "Alcohol",
+      "Taking with other paracetamol-containing products at the same time"
+    ]
+  },
+  "ONDANSETRON": {
+    "uses": "Prevents and treats nausea and vomiting, including after surgery or chemotherapy.",
+    "how": [
+      "Usually taken as a single dose when needed, or as directed by your doctor",
+      "Tablet can be taken with or without food"
+    ],
+    "sideEffects": [
+      "Headache",
+      "Constipation",
+      "Tiredness"
+    ],
+    "seeDoctor": [
+      "Irregular heartbeat",
+      "Severe stomach pain",
+      "Vision changes"
+    ],
+    "avoid": [
+      "Using regularly without medical advice",
+      "Alcohol"
+    ]
+  },
+  "METRONIDAZOLE": {
+    "uses": "An antibiotic used for infections caused by certain bacteria and parasites, including stomach and dental infections.",
+    "how": [
+      "Usually taken with food to reduce stomach upset",
+      "Complete the full course even if you feel better"
+    ],
+    "sideEffects": [
+      "Metallic taste",
+      "Nausea",
+      "Dry mouth"
+    ],
+    "seeDoctor": [
+      "Numbness or tingling in hands/feet",
+      "Severe rash",
+      "No improvement after a few days"
+    ],
+    "avoid": [
+      "Alcohol during treatment and for 2 days after",
+      "Stopping the course early"
+    ]
+  },
+  "LOPERAMIDE": {
+    "uses": "Controls sudden diarrhoea by slowing down gut movement.",
+    "how": [
+      "Take after each loose stool, as directed",
+      "Drink plenty of fluids alongside to prevent dehydration"
+    ],
+    "sideEffects": [
+      "Constipation",
+      "Stomach cramps",
+      "Dizziness"
+    ],
+    "seeDoctor": [
+      "Diarrhoea with high fever or blood in stools",
+      "No improvement after 2 days",
+      "Severe bloating"
+    ],
+    "avoid": [
+      "Use in young children without medical advice",
+      "Using for more than 2 days without consulting a doctor"
+    ]
+  },
+  "RABEPRAZOLE": {
+    "uses": "Reduces stomach acid; used for acidity, reflux (GERD), and ulcers.",
+    "how": [
+      "Usually taken once daily before breakfast",
+      "Swallow the tablet whole, don't crush or chew"
+    ],
+    "sideEffects": [
+      "Headache",
+      "Nausea",
+      "Stomach pain"
+    ],
+    "seeDoctor": [
+      "Persistent diarrhoea",
+      "Unexplained weight loss",
+      "Difficulty swallowing"
+    ],
+    "avoid": [
+      "Long-term use without medical review"
+    ]
+  },
+  "ESOMEPRAZOLE": {
+    "uses": "Reduces stomach acid; used for acidity, reflux (GERD), and ulcers.",
+    "how": [
+      "Usually taken once daily, at least an hour before a meal",
+      "Swallow the capsule/tablet whole"
+    ],
+    "sideEffects": [
+      "Headache",
+      "Stomach pain",
+      "Diarrhoea or constipation"
+    ],
+    "seeDoctor": [
+      "Severe or persistent diarrhoea",
+      "Unexplained weight loss",
+      "Vomiting blood"
+    ],
+    "avoid": [
+      "Long-term use without medical review"
+    ]
+  },
+  "DROTAVERINE": {
+    "uses": "Relieves spasm-related pain in the stomach, intestines, and urinary tract (e.g. period cramps, abdominal cramps).",
+    "how": [
+      "Usually taken 1-3 times a day as needed, with or after food",
+      "Follow the dose your doctor recommends"
+    ],
+    "sideEffects": [
+      "Headache",
+      "Dizziness",
+      "Palpitations (uncommon)"
+    ],
+    "seeDoctor": [
+      "Pain that doesn't improve or worsens",
+      "Severe dizziness or fainting"
+    ],
+    "avoid": [
+      "Use without knowing the cause of the pain",
+      "Alcohol"
+    ]
+  },
+  "MEFENAMIC ACID": {
+    "uses": "A pain reliever used for period pain, headache, and mild-to-moderate pain and inflammation.",
+    "how": [
+      "Taken with food to reduce stomach upset",
+      "Not usually recommended for more than 7 days continuously"
+    ],
+    "sideEffects": [
+      "Stomach upset",
+      "Drowsiness",
+      "Diarrhoea"
+    ],
+    "seeDoctor": [
+      "Black or bloody stools",
+      "Severe stomach pain",
+      "Skin rash or swelling"
+    ],
+    "avoid": [
+      "Alcohol",
+      "Taking on an empty stomach",
+      "Use during pregnancy without medical advice"
+    ]
+  },
+  "SERRATIOPEPTIDASE": {
+    "uses": "An enzyme medicine used to reduce swelling and inflammation, often after injury, surgery, or with infections.",
+    "how": [
+      "Usually taken on an empty stomach, as directed",
+      "Often prescribed alongside another medicine for the underlying condition"
+    ],
+    "sideEffects": [
+      "Stomach upset",
+      "Nausea",
+      "Skin rash (rare)"
+    ],
+    "seeDoctor": [
+      "Signs of allergic reaction",
+      "Swelling that doesn't improve"
+    ],
+    "avoid": [
+      "Use without medical guidance for unexplained swelling"
+    ]
+  },
+  "NIMESULIDE": {
+    "uses": "A pain and anti-inflammatory medicine used for short-term relief of pain such as joint or muscle pain.",
+    "how": [
+      "Usually taken after food",
+      "Only for short-term use, as directed by a doctor"
+    ],
+    "sideEffects": [
+      "Stomach upset",
+      "Heartburn",
+      "Drowsiness"
+    ],
+    "seeDoctor": [
+      "Yellowing of skin or eyes",
+      "Dark urine",
+      "Unusual tiredness"
+    ],
+    "avoid": [
+      "Use in children under 12",
+      "Long-term or unsupervised use",
+      "Alcohol"
+    ]
+  },
+  "CEFPODOXIME": {
+    "uses": "An antibiotic used for bacterial infections of the throat, ear, sinus, and urinary tract.",
+    "how": [
+      "Usually taken twice a day with food",
+      "Complete the full course even if symptoms improve"
+    ],
+    "sideEffects": [
+      "Diarrhoea",
+      "Nausea",
+      "Stomach pain",
+      "Ringing in ears (uncommon)"
+    ],
+    "seeDoctor": [
+      "Severe or bloody diarrhoea",
+      "Signs of allergic reaction",
+      "No improvement after a few days",
+      "Unusual bruising or bleeding"
+    ],
+    "avoid": [
+      "Stopping the course early",
+      "Skipping doses"
+    ]
+  },
+  "SALBUTAMOL": {
+    "uses": "A bronchodilator used to relieve wheezing and breathlessness in asthma and other breathing conditions.",
+    "how": [
+      "Inhaler: shake well and use as directed, usually when needed",
+      "Tablet/syrup form taken as prescribed"
+    ],
+    "sideEffects": [
+      "Tremor",
+      "Fast heartbeat",
+      "Headache"
+    ],
+    "seeDoctor": [
+      "Breathlessness not relieved by the inhaler",
+      "Chest pain",
+      "Needing the inhaler more often than usual"
+    ],
+    "avoid": [
+      "Overusing the inhaler beyond prescribed frequency"
+    ]
+  },
+  "LEVOSALBUTAMOL": {
+    "uses": "A bronchodilator used to relieve wheezing and breathlessness in asthma and other breathing conditions.",
+    "how": [
+      "Inhaler: shake well and use as directed, usually when needed",
+      "Tablet/syrup form taken as prescribed"
+    ],
+    "sideEffects": [
+      "Tremor",
+      "Fast heartbeat",
+      "Nervousness"
+    ],
+    "seeDoctor": [
+      "Breathlessness not relieved by the inhaler",
+      "Chest pain",
+      "Needing the inhaler more often than usual"
+    ],
+    "avoid": [
+      "Overusing the inhaler beyond prescribed frequency"
+    ]
+  },
+  "FERROUS SULFATE": {
+    "uses": "An iron supplement used to treat or prevent iron-deficiency anaemia.",
+    "how": [
+      "Best absorbed on an empty stomach, but can be taken with food if it upsets your stomach",
+      "Taking with vitamin C-rich food can help absorption"
+    ],
+    "sideEffects": [
+      "Constipation",
+      "Dark/black stools (normal)",
+      "Stomach upset"
+    ],
+    "seeDoctor": [
+      "Severe stomach pain",
+      "Signs of allergic reaction",
+      "No improvement in fatigue after weeks of use"
+    ],
+    "avoid": [
+      "Taking with tea, coffee, or calcium supplements at the same time (reduces absorption)"
+    ]
+  },
+  "FOLIC ACID": {
+    "uses": "A B-vitamin supplement used to treat or prevent folate deficiency, often prescribed during pregnancy.",
+    "how": [
+      "Usually taken once daily, with or without food"
+    ],
+    "sideEffects": [
+      "Generally well tolerated",
+      "Nausea (rare)"
+    ],
+    "seeDoctor": [
+      "Signs of allergic reaction",
+      "Unusual symptoms while pregnant"
+    ],
+    "avoid": [
+      "Skipping doses if prescribed during pregnancy"
+    ]
+  },
+  "ASCORBIC ACID": {
+    "uses": "Vitamin C supplement used to prevent or treat vitamin C deficiency and support wound healing.",
+    "how": [
+      "Usually taken once daily, with or without food"
+    ],
+    "sideEffects": [
+      "Stomach upset at high doses",
+      "Diarrhoea at high doses"
+    ],
+    "seeDoctor": [
+      "Signs of allergic reaction",
+      "Kidney stone symptoms with long-term high-dose use"
+    ],
+    "avoid": [
+      "Very high doses without medical advice, especially with kidney conditions"
+    ]
+  },
+  "CALCIUM CARBONATE + VITAMIN D3": {
+    "uses": "A supplement used to treat or prevent calcium and vitamin D deficiency, and to support bone health.",
+    "how": [
+      "Usually taken once or twice daily with food",
+      "Best taken with meals to improve absorption"
+    ],
+    "sideEffects": [
+      "Constipation",
+      "Bloating",
+      "Gas"
+    ],
+    "seeDoctor": [
+      "Signs of high calcium (nausea, confusion, excessive thirst)",
+      "Kidney stone symptoms"
+    ],
+    "avoid": [
+      "Taking with iron supplements at the same time (reduces absorption)",
+      "Excess use beyond prescribed dose"
+    ]
+  },
+  "NORFLOXACIN": {
+    "uses": "An antibiotic mainly used for urinary tract infections and some intestinal infections.",
+    "how": [
+      "Usually taken on an empty stomach, 1 hour before or 2 hours after food",
+      "Complete the full course even if you feel better"
+    ],
+    "sideEffects": [
+      "Nausea",
+      "Dizziness",
+      "Headache"
+    ],
+    "seeDoctor": [
+      "Tendon pain or swelling",
+      "Severe diarrhoea",
+      "Signs of allergic reaction"
+    ],
+    "avoid": [
+      "Dairy products and antacids near dosing time (reduces absorption)",
+      "Prolonged sun exposure",
+      "Stopping the course early"
+    ]
+  },
+  "OFLOXACIN": {
+    "uses": "An antibiotic used for urinary tract, respiratory, and some skin infections.",
+    "how": [
+      "Usually taken with or without food, at evenly spaced times",
+      "Complete the full course even if you feel better"
+    ],
+    "sideEffects": [
+      "Nausea",
+      "Dizziness",
+      "Insomnia"
+    ],
+    "seeDoctor": [
+      "Tendon pain or swelling",
+      "Severe diarrhoea",
+      "Signs of allergic reaction"
+    ],
+    "avoid": [
+      "Dairy products and antacids near dosing time",
+      "Prolonged sun exposure",
+      "Stopping the course early"
+    ]
+  },
+  "TINIDAZOLE": {
+    "uses": "An antibiotic/antiparasitic used for infections such as giardiasis, amoebiasis, and certain bacterial infections.",
+    "how": [
+      "Usually taken with food to reduce stomach upset",
+      "Often given as a short course; follow it exactly as prescribed"
+    ],
+    "sideEffects": [
+      "Metallic taste",
+      "Nausea",
+      "Dizziness"
+    ],
+    "seeDoctor": [
+      "Numbness or tingling",
+      "Severe rash",
+      "No improvement after the course"
+    ],
+    "avoid": [
+      "Alcohol during treatment and for 3 days after",
+      "Stopping the course early"
+    ]
+  },
+  "NAPROXEN": {
+    "uses": "A pain and anti-inflammatory medicine used for joint pain, period pain, and muscle pain.",
+    "how": [
+      "Taken with food or milk to reduce stomach upset",
+      "Swallow the tablet whole with water"
+    ],
+    "sideEffects": [
+      "Stomach upset",
+      "Heartburn",
+      "Headache"
+    ],
+    "seeDoctor": [
+      "Black or bloody stools",
+      "Severe stomach pain",
+      "Swelling of face or throat"
+    ],
+    "avoid": [
+      "Alcohol",
+      "Taking on an empty stomach",
+      "Long-term use without a doctor's advice"
+    ]
+  },
+  "TRAMADOL": {
+    "uses": "A prescription pain reliever used for moderate to severe pain, typically after other pain relievers haven't helped.",
+    "how": [
+      "Take exactly as prescribed by your doctor, no more and no less",
+      "Can be taken with or without food"
+    ],
+    "sideEffects": [
+      "Nausea",
+      "Dizziness",
+      "Drowsiness",
+      "Constipation"
+    ],
+    "seeDoctor": [
+      "Difficulty breathing",
+      "Seizures",
+      "Severe confusion or drowsiness"
+    ],
+    "avoid": [
+      "Alcohol",
+      "Driving or operating machinery until you know how it affects you",
+      "Using more than prescribed or for longer than advised"
+    ]
+  },
+  "ITOPRIDE": {
+    "uses": "Helps the stomach empty faster; used for bloating, fullness, nausea, and indigestion.",
+    "how": [
+      "Usually taken before meals, as directed",
+      "Follow the dosing schedule your doctor recommends"
+    ],
+    "sideEffects": [
+      "Diarrhoea",
+      "Headache",
+      "Stomach pain"
+    ],
+    "seeDoctor": [
+      "Symptoms not improving after a few days",
+      "Signs of allergic reaction"
+    ],
+    "avoid": [
+      "Long-term use without medical review"
+    ]
+  },
+  "ORAL REHYDRATION SALTS": {
+    "uses": "Replaces water, salts, and minerals lost due to diarrhoea, vomiting, or excessive sweating, to prevent or treat dehydration.",
+    "how": [
+      "Dissolve the full sachet in the exact amount of clean water stated on the pack",
+      "Sip slowly and frequently, especially after each loose stool"
+    ],
+    "sideEffects": [
+      "Nausea (uncommon)",
+      "Bloating (if made too concentrated)"
+    ],
+    "seeDoctor": [
+      "Signs of severe dehydration (very little urine, extreme thirst, sunken eyes, lethargy)",
+      "Diarrhoea lasting more than 2 days",
+      "Blood in stools"
+    ],
+    "avoid": [
+      "Making the solution stronger or weaker than the instructions state",
+      "Adding sugar or salt beyond what's specified"
+    ]
+  },
+  "DIGENE": {
+    "uses": "An antacid used for fast relief from acidity, heartburn, gas, bloating, and indigestion. The tablet/gel combines aluminium hydroxide, magnesium hydroxide, and magnesium aluminium silicate (which neutralise excess stomach acid) with simethicone (which helps break up trapped gas bubbles). One of the most widely used household antacid brands in India, made by Abbott. If you're looking this up by salt name instead of brand, search Aluminium Hydroxide + Magnesium Hydroxide + Simethicone — Gelusil is a well-known equivalent-class brand with a similar combination.",
+    "how": [
+      "Tablet: chew 2-4 tablets as needed, after meals and at bedtime",
+      "Gel/liquid: take 1-2 teaspoons (5-10 ml) as needed, after meals and at bedtime",
+      "Do not exceed 4 tablets (or equivalent) in 24 hours unless a doctor says otherwise"
+    ],
+    "sideEffects": [
+      "Constipation (from the aluminium component)",
+      "Loose stools (from the magnesium component) — the two are combined partly to balance each other out",
+      "Mild stomach upset"
+    ],
+    "seeDoctor": [
+      "Symptoms lasting more than 2 weeks despite regular use",
+      "Black or bloody stools",
+      "Severe stomach pain",
+      "Signs of an allergic reaction"
+    ],
+    "avoid": [
+      "Taking within 2 hours of other medicines — antacids can reduce absorption of many drugs (e.g. antibiotics like tetracyclines/fluoroquinolones, iron supplements, thyroid medicine)",
+      "Using daily long-term without medical advice, since it can mask a more serious underlying condition",
+      "Exceeding the labelled dose"
+    ],
+    "forms": [
+      "Chewable tablet (multiple flavours)",
+      "Gel/liquid (bottle)",
+      "Digene UltraFizz — effervescent powder sachet"
+    ]
+  }
+}
