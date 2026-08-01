@@ -8,8 +8,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <!-- Tesseract.js for browser-based OCR (MediaPipe has no text-recognition task, so we're back on this) -->
 <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
-<!-- OpenCV.js for client-side image preprocessing (deskew, contrast, adaptive threshold) before OCR -->
-<script async src="https://docs.opencv.org/4.9.0/opencv.js" onload="window.__cvReady = true;"></script>
+<!-- Image preprocessing (grayscale, contrast, adaptive threshold) runs on a
+     WebGL2 shader pipeline defined below — no external library needed. -->
 <style>
   :root{
     --primary: #2F8F83;
@@ -1166,108 +1166,274 @@ function getTesseractWorker() {
   return tesseractWorkerPromise;
 }
 
-// Waits for the async-loaded OpenCV.js script to finish initializing.
-function waitForOpenCV(timeoutMs = 8000) {
-  return new Promise((resolve, reject) => {
-    if (window.cv && window.cv.Mat) { resolve(window.cv); return; }
-    const start = Date.now();
-    const check = setInterval(() => {
-      if (window.cv && window.cv.Mat) {
-        clearInterval(check);
-        resolve(window.cv);
-      } else if (Date.now() - start > timeoutMs) {
-        clearInterval(check);
-        reject(new Error('OpenCV.js failed to load in time'));
-      }
-    }, 100);
-  });
-}
+// --- WebGL2 preprocessing pipeline -----------------------------------
+// Replaces the old OpenCV.js path. Same goal (grayscale -> adaptive
+// threshold, to handle glare/uneven lighting on glossy strips) but the
+// entire pipeline runs as GPU shader passes instead of synchronous CPU
+// work, so it can't freeze the main thread the way OpenCV.js did.
+//
+// Deliberately NOT included here: deskew (needs an angle-detection step,
+// which is a separate Worker-based feature, out of scope for this pass)
+// and post-threshold sharpening (sharpening an already-binary image mostly
+// just adds ringing artifacts around edges — dropping it is an improvement
+// over the old OpenCV behavior, not a missing feature).
 
-// Runs a cropped <canvas> through OpenCV: grayscale -> deskew -> adaptive
-// threshold -> mild sharpening. Returns a new canvas ready for OCR.
-// Falls back to a plain grayscale/contrast pass if OpenCV isn't available.
-async function preprocessForOCR(sourceCanvas) {
-  // OpenCV.js path disabled: it was hanging the main thread on some
-  // devices (cv.imread() appears to get called before the WASM runtime
-  // is fully ready, and blocks indefinitely instead of erroring). Using
-  // the lightweight plain-canvas fallback for everyone instead — it's
-  // less powerful (no deskew) but fast and reliable.
-  return basicPreprocess(sourceCanvas);
-}
+const VERTEX_SHADER_SRC = `#version 300 es
+in vec2 a_position;
+in vec2 a_texCoord;
+out vec2 v_texCoord;
+void main() {
+  gl_Position = vec4(a_position, 0.0, 1.0);
+  v_texCoord = a_texCoord;
+}`;
 
-async function preprocessForOCR_openCVDisabled(sourceCanvas) {
-  let cv;
-  try {
-    cv = await waitForOpenCV();
-  } catch (e) {
-    console.warn('OpenCV unavailable, using basic preprocessing fallback:', e);
-    return basicPreprocess(sourceCanvas);
-  }
+const GRAYSCALE_CONTRAST_FRAGMENT_SRC = `#version 300 es
+precision mediump float;
+in vec2 v_texCoord;
+uniform sampler2D u_image;
+uniform float u_contrast;
+out vec4 outColor;
+void main() {
+  vec3 c = texture(u_image, v_texCoord).rgb;
+  float gray = dot(c, vec3(0.299, 0.587, 0.114));
+  gray = clamp((gray - 0.5) * u_contrast + 0.5, 0.0, 1.0);
+  outColor = vec4(vec3(gray), 1.0);
+}`;
 
-  const tick = () => new Promise(r => setTimeout(r, 0));
-
-  const src = cv.imread(sourceCanvas);
-  const gray = new cv.Mat();
-  cv.cvtColor(src, gray, cv.COLOR_RGBA2GRAY);
-  await tick();
-
-  // Deskew: find the dominant text angle via minAreaRect on thresholded
-  // foreground pixels, then rotate to straighten it.
-  const deskewed = new cv.Mat();
-  try {
-    const binForAngle = new cv.Mat();
-    cv.threshold(gray, binForAngle, 0, 255, cv.THRESH_BINARY_INV + cv.THRESH_OTSU);
-    const points = new cv.Mat();
-    cv.findNonZero(binForAngle, points);
-    if (points.rows > 0) {
-      const rect = cv.minAreaRect(points);
-      let angle = rect.angle;
-      if (angle < -45) angle += 90;
-      const center = new cv.Point(gray.cols / 2, gray.rows / 2);
-      const M = cv.getRotationMatrix2D(center, angle, 1);
-      const dsize = new cv.Size(gray.cols, gray.rows);
-      cv.warpAffine(gray, deskewed, M, dsize, cv.INTER_LINEAR, cv.BORDER_REPLICATE);
-      M.delete();
-    } else {
-      gray.copyTo(deskewed);
+// Separable box blur (run once horizontally, once vertically) — computes
+// the local neighborhood average, i.e. the "local mean" that adaptive
+// thresholding compares each pixel against. Loop bound is a fixed 41
+// (radius up to 20) with the actual radius applied via the uniform inside
+// the loop body, since GLSL ES 3.00 requires a compile-time loop bound.
+const BOX_BLUR_FRAGMENT_SRC = `#version 300 es
+precision mediump float;
+in vec2 v_texCoord;
+uniform sampler2D u_image;
+uniform vec2 u_texelSize;
+uniform vec2 u_direction;
+uniform int u_radius;
+out vec4 outColor;
+void main() {
+  float sum = 0.0;
+  float count = 0.0;
+  for (int i = -20; i <= 20; i++) {
+    if (i >= -u_radius && i <= u_radius) {
+      vec2 offset = u_direction * u_texelSize * float(i);
+      sum += texture(u_image, v_texCoord + offset).r;
+      count += 1.0;
     }
-    binForAngle.delete();
-    points.delete();
-  } catch (e) {
-    console.warn('Deskew step failed, continuing without it:', e);
-    gray.copyTo(deskewed);
   }
-  await tick();
+  outColor = vec4(vec3(sum / count), 1.0);
+}`;
 
-  // Adaptive threshold handles glare/uneven lighting on glossy strips
-  // better than a single global threshold.
-  const thresholded = new cv.Mat();
-  cv.adaptiveThreshold(
-    deskewed, thresholded, 255,
-    cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY,
-    31, 15
-  );
-  await tick();
+// Adaptive threshold: a pixel becomes black only if it's darker than its
+// local neighborhood average by more than u_bias — this is what lets text
+// stay readable under glare or uneven lighting across the strip, instead
+// of a single global threshold blowing out one side of the image.
+const ADAPTIVE_THRESHOLD_FRAGMENT_SRC = `#version 300 es
+precision mediump float;
+in vec2 v_texCoord;
+uniform sampler2D u_gray;
+uniform sampler2D u_blur;
+uniform float u_bias;
+out vec4 outColor;
+void main() {
+  float g = texture(u_gray, v_texCoord).r;
+  float m = texture(u_blur, v_texCoord).r;
+  float result = (g < (m - u_bias)) ? 0.0 : 1.0;
+  outColor = vec4(vec3(result), 1.0);
+}`;
 
-  // Mild sharpening to crisp up character edges after thresholding.
-  const sharpened = new cv.Mat();
-  const kernel = cv.matFromArray(3, 3, cv.CV_32F, [0, -1, 0, -1, 5, -1, 0, -1, 0]);
-  cv.filter2D(thresholded, sharpened, -1, kernel);
-  await tick();
+function compileShader(gl, type, source) {
+  const shader = gl.createShader(type);
+  gl.shaderSource(shader, source);
+  gl.compileShader(shader);
+  if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+    const log = gl.getShaderInfoLog(shader);
+    gl.deleteShader(shader);
+    throw new Error('Shader compile failed: ' + log);
+  }
+  return shader;
+}
+
+function linkProgram(gl, vertexSrc, fragmentSrc) {
+  const program = gl.createProgram();
+  const vs = compileShader(gl, gl.VERTEX_SHADER, vertexSrc);
+  const fs = compileShader(gl, gl.FRAGMENT_SHADER, fragmentSrc);
+  gl.attachShader(program, vs);
+  gl.attachShader(program, fs);
+  gl.linkProgram(program);
+  // Safe to flag for deletion immediately: GL keeps a shader alive as long
+  // as it's attached to a program, regardless of deletion status, so this
+  // just means we don't have to track the shader handles separately later.
+  gl.deleteShader(vs);
+  gl.deleteShader(fs);
+  if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+    const log = gl.getProgramInfoLog(program);
+    gl.deleteProgram(program);
+    throw new Error('Program link failed: ' + log);
+  }
+  return program;
+}
+
+// Creates an empty RGBA8 texture + framebuffer pair to render into as an
+// intermediate step (grayscale output, blur passes) before the final pass.
+function createRenderTarget(gl, width, height) {
+  const texture = gl.createTexture();
+  gl.bindTexture(gl.TEXTURE_2D, texture);
+  gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, width, height, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+
+  const framebuffer = gl.createFramebuffer();
+  gl.bindFramebuffer(gl.FRAMEBUFFER, framebuffer);
+  gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, texture, 0);
+  if (gl.checkFramebufferStatus(gl.FRAMEBUFFER) !== gl.FRAMEBUFFER_COMPLETE) {
+    throw new Error('Framebuffer incomplete');
+  }
+  return { texture, framebuffer };
+}
+
+// Runs the full grayscale -> blur(x2) -> adaptive-threshold pipeline on
+// the GPU and draws the final result onto the returned canvas. Throws on
+// any WebGL2 unavailability or shader error so the caller can fall back
+// to basicPreprocess().
+function runWebGL2Preprocess(sourceCanvas) {
+  const width = sourceCanvas.width;
+  const height = sourceCanvas.height;
 
   const outCanvas = document.createElement('canvas');
-  outCanvas.width = sharpened.cols;
-  outCanvas.height = sharpened.rows;
-  cv.imshow(outCanvas, sharpened);
+  outCanvas.width = width;
+  outCanvas.height = height;
+  // preserveDrawingBuffer: without this, the browser is free to clear the
+  // canvas's backing buffer as soon as the frame is composited, which can
+  // leave Tesseract reading a blank canvas if it accesses it slightly
+  // later than the same task.
+  const gl = outCanvas.getContext('webgl2', { preserveDrawingBuffer: true });
+  if (!gl) throw new Error('WebGL2 not supported on this device');
 
-  src.delete(); gray.delete(); deskewed.delete();
-  thresholded.delete(); sharpened.delete(); kernel.delete();
+  // Canvases/images upload upside-down into WebGL textures by default;
+  // flipping here keeps every pass (and the final on-screen result) in
+  // normal top-down orientation, since all passes share this convention.
+  gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true);
+
+  const progGray = linkProgram(gl, VERTEX_SHADER_SRC, GRAYSCALE_CONTRAST_FRAGMENT_SRC);
+  const progBlur = linkProgram(gl, VERTEX_SHADER_SRC, BOX_BLUR_FRAGMENT_SRC);
+  const progThreshold = linkProgram(gl, VERTEX_SHADER_SRC, ADAPTIVE_THRESHOLD_FRAGMENT_SRC);
+
+  // Full-screen quad, shared by every pass.
+  const quadVAO = gl.createVertexArray();
+  gl.bindVertexArray(quadVAO);
+  const quadBuffer = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, quadBuffer);
+  // x, y, u, v — two triangles covering the full clip-space quad
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([
+    -1, -1, 0, 0,   1, -1, 1, 0,   -1, 1, 0, 1,
+    -1, 1, 0, 1,    1, -1, 1, 0,    1, 1, 1, 1,
+  ]), gl.STATIC_DRAW);
+  function bindQuadAttribs(program) {
+    const posLoc = gl.getAttribLocation(program, 'a_position');
+    const texLoc = gl.getAttribLocation(program, 'a_texCoord');
+    gl.enableVertexAttribArray(posLoc);
+    gl.vertexAttribPointer(posLoc, 2, gl.FLOAT, false, 16, 0);
+    gl.enableVertexAttribArray(texLoc);
+    gl.vertexAttribPointer(texLoc, 2, gl.FLOAT, false, 16, 8);
+  }
+
+  // Source image -> texture
+  const sourceTexture = gl.createTexture();
+  gl.bindTexture(gl.TEXTURE_2D, sourceTexture);
+  gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, sourceCanvas);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+
+  const grayTarget = createRenderTarget(gl, width, height);
+  const tmpTarget = createRenderTarget(gl, width, height);
+  const blurTarget = createRenderTarget(gl, width, height);
+
+  gl.viewport(0, 0, width, height);
+
+  // Pass 1: grayscale + contrast
+  gl.bindFramebuffer(gl.FRAMEBUFFER, grayTarget.framebuffer);
+  gl.useProgram(progGray);
+  bindQuadAttribs(progGray);
+  gl.activeTexture(gl.TEXTURE0);
+  gl.bindTexture(gl.TEXTURE_2D, sourceTexture);
+  gl.uniform1i(gl.getUniformLocation(progGray, 'u_image'), 0);
+  gl.uniform1f(gl.getUniformLocation(progGray, 'u_contrast'), 1.4);
+  gl.drawArrays(gl.TRIANGLES, 0, 6);
+
+  // Pass 2: horizontal box blur of the grayscale image
+  const blurRadius = 14; // ~ OpenCV's old blockSize=31 (half-width ~15)
+  gl.bindFramebuffer(gl.FRAMEBUFFER, tmpTarget.framebuffer);
+  gl.useProgram(progBlur);
+  bindQuadAttribs(progBlur);
+  gl.activeTexture(gl.TEXTURE0);
+  gl.bindTexture(gl.TEXTURE_2D, grayTarget.texture);
+  gl.uniform1i(gl.getUniformLocation(progBlur, 'u_image'), 0);
+  gl.uniform2f(gl.getUniformLocation(progBlur, 'u_texelSize'), 1 / width, 1 / height);
+  gl.uniform2f(gl.getUniformLocation(progBlur, 'u_direction'), 1, 0);
+  gl.uniform1i(gl.getUniformLocation(progBlur, 'u_radius'), blurRadius);
+  gl.drawArrays(gl.TRIANGLES, 0, 6);
+
+  // Pass 3: vertical box blur of the horizontally-blurred image — the
+  // combination approximates the local mean over a ~29x29px neighborhood.
+  gl.bindFramebuffer(gl.FRAMEBUFFER, blurTarget.framebuffer);
+  gl.bindTexture(gl.TEXTURE_2D, tmpTarget.texture);
+  gl.uniform2f(gl.getUniformLocation(progBlur, 'u_direction'), 0, 1);
+  gl.drawArrays(gl.TRIANGLES, 0, 6);
+
+  // Pass 4: adaptive threshold, drawn straight to the visible canvas
+  gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+  gl.useProgram(progThreshold);
+  bindQuadAttribs(progThreshold);
+  gl.activeTexture(gl.TEXTURE0);
+  gl.bindTexture(gl.TEXTURE_2D, grayTarget.texture);
+  gl.uniform1i(gl.getUniformLocation(progThreshold, 'u_gray'), 0);
+  gl.activeTexture(gl.TEXTURE1);
+  gl.bindTexture(gl.TEXTURE_2D, blurTarget.texture);
+  gl.uniform1i(gl.getUniformLocation(progThreshold, 'u_blur'), 1);
+  gl.uniform1f(gl.getUniformLocation(progThreshold, 'u_bias'), 0.06); // ~ OpenCV's old C=15 in 0-255 terms
+  gl.drawArrays(gl.TRIANGLES, 0, 6);
+
+  // The result is already baked into outCanvas's own pixel buffer (thanks
+  // to preserveDrawingBuffer), so none of these GPU objects are needed
+  // past this point. A fresh WebGL2 context + full set of these is created
+  // on every call — including retries after a failed/blurry capture, which
+  // the capture button explicitly allows — so skipping this cleanup would
+  // leak GPU memory on every scan attempt and could eventually exhaust the
+  // browser's cap on simultaneously live WebGL contexts.
+  gl.deleteProgram(progGray);
+  gl.deleteProgram(progBlur);
+  gl.deleteProgram(progThreshold);
+  gl.deleteVertexArray(quadVAO);
+  gl.deleteBuffer(quadBuffer);
+  gl.deleteTexture(sourceTexture);
+  [grayTarget, tmpTarget, blurTarget].forEach(({ texture, framebuffer }) => {
+    gl.deleteTexture(texture);
+    gl.deleteFramebuffer(framebuffer);
+  });
 
   return outCanvas;
 }
 
+// Public entry point: tries the WebGL2 pipeline first, falls back to the
+// plain-canvas pass if WebGL2 is unavailable or any step throws.
+async function preprocessForOCR(sourceCanvas) {
+  try {
+    return runWebGL2Preprocess(sourceCanvas);
+  } catch (e) {
+    console.warn('WebGL2 preprocessing unavailable, using basic preprocessing fallback:', e);
+    return basicPreprocess(sourceCanvas);
+  }
+}
+
 // Plain-canvas fallback (grayscale + contrast stretch) used only if
-// OpenCV.js hasn't finished loading in time.
+// WebGL2 isn't supported on this device/browser.
 function basicPreprocess(sourceCanvas) {
   const ctx = sourceCanvas.getContext('2d');
   const imgData = ctx.getImageData(0, 0, sourceCanvas.width, sourceCanvas.height);
